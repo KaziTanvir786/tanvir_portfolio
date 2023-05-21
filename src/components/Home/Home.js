@@ -25,7 +25,7 @@ function Home() {
                 <strong className="main-name"> Kazi Tanvir Akter</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 20, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
@@ -35,7 +35,7 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "380px" }}
+                style={{ maxHeight: "400px", borderRadius: "50%", marginLeft: "2%" }}
               />
             </Col>
           </Row>
