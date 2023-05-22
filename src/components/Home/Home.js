@@ -35,10 +35,15 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "400px", borderRadius: "50%", marginLeft: "2%" }}
+                style={{ maxHeight: "400px", borderRadius: "50%", marginLeft: "2%", boxShadow: "1px 1px 40px #3278fa" }}
               />
             </Col>
           </Row>
+          <div className="go-down-container">
+            <div className="go-down" id="go-down-home">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
         </Container>
       </Container>
       <Home2 />
