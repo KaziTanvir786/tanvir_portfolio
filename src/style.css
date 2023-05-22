@@ -104,7 +104,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #1b56af !important;
+  background-color: white!important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -329,6 +329,7 @@ button:focus {
     font-size: 1.4em !important;
     font-weight: 500 !important;
     position: absolute !important;
+    margin-left: 10px;
   }
 
   .Typewriter__cursor {
@@ -336,7 +337,34 @@ button:focus {
   }
 
   .img-fluid{
-    margin-left: 2.1rem !important;
+    /* margin-left: 2.1rem !important; */
+    margin-top: 3rem;
+    padding: 2.2rem;
+  }
+  .heading-name{
+    margin-left: 10px;
+    font-size: 26px !important;
+  }
+  .heading{
+    margin-left: 10px;
+    font-size: 26px !important;
+  }
+  .home-section{
+    height: 100vh !important;
+  }
+  .home-content{
+    padding-top: 1rem !important;
+  }
+  .home-about-section{
+    margin-top: -25% !important;
+    padding-top: 0 !important;
+  }
+  .home-about-description{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .myAvtar{
+    margin-top: -20% !important;
   }
 }
 
