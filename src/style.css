@@ -65,7 +65,7 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #031424;
+  background: #041525;
 }
 
 /* Handle */
@@ -104,7 +104,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: white!important;
+  background-color: white !important;
   height: 3px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -319,14 +319,15 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 250px !important;
-  padding-top: 30px !important;
+  /* padding-bottom: 250px !important; */
+  /* padding-top: 30px !important; */
+  /* height: 110vh; */
 }
 
-.go-down{
+.go-down {
   height: 50px;
   width: 50px;
   background-color: #1a85ff;
@@ -338,8 +339,8 @@ button:focus {
   cursor: pointer;
 }
 
-.go-down-container{
-  margin-top: 8%;
+.go-down-container {
+  margin-top: 2%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -393,42 +394,51 @@ button:focus {
     display: none !important;
   }
 
-  .img-fluid{
+  .img-fluid {
     margin-left: 3.5vw !important;
     margin-top: 4rem;
     max-height: 320px !important;
   }
-  .heading-name{
+
+  .heading-name {
     margin-left: 10px;
     font-size: 26px !important;
     margin-top: -10px;
   }
-  .heading{
+
+  .heading {
     margin-left: 10px;
     font-size: 26px !important;
   }
-  .home-section{
+
+  .home-section {
     height: 110vh !important;
     /* margin-top: -20px; */
   }
-  .home-content{
+
+  .home-content {
     padding-top: 1rem !important;
   }
-  .home-about-section{
+
+  .home-about-section {
     margin-top: -18% !important;
     padding-top: 0 !important;
   }
-  .home-about-description{
+
+  .home-about-description {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
-  .myAvtar{
+
+  .myAvtar {
     margin-top: -20% !important;
   }
-  .logo-text{
+
+  .logo-text {
     font-size: 25px !important;
   }
-  .social-icons{
+
+  .social-icons {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
