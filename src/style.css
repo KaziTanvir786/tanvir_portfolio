@@ -105,7 +105,7 @@ button:focus {
 .navbar-toggler span {
   display: block !important;
   background-color: white!important;
-  height: 4px !important;
+  height: 3px !important;
   width: 27px !important;
   margin-top: 5px !important;
   margin-bottom: 5px !important;
@@ -337,26 +337,28 @@ button:focus {
   }
 
   .img-fluid{
-    /* margin-left: 2.1rem !important; */
-    margin-top: 3rem;
+    margin-left: -0.2rem !important;
+    margin-top: 1.5rem;
     padding: 2.2rem;
   }
   .heading-name{
     margin-left: 10px;
     font-size: 26px !important;
+    margin-top: -10px;
   }
   .heading{
     margin-left: 10px;
     font-size: 26px !important;
   }
   .home-section{
-    height: 100vh !important;
+    height: 120vh !important;
+    margin-top: -20px;
   }
   .home-content{
     padding-top: 1rem !important;
   }
   .home-about-section{
-    margin-top: -25% !important;
+    margin-top: -18% !important;
     padding-top: 0 !important;
   }
   .home-about-description{
@@ -365,6 +367,9 @@ button:focus {
   }
   .myAvtar{
     margin-top: -20% !important;
+  }
+  .logo-text{
+    font-size: 25px !important;
   }
 }
 
