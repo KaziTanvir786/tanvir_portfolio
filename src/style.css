@@ -305,22 +305,23 @@ button:focus {
 }
 
 .nav-icon {
-  color: whitesmoke;
+  color: rgb(236, 236, 236);
   font-size: 26px;
   transition: 0.2s ease;
   display: inline;
   border: none;
-  padding: 7px;
+  padding: 6px;
   height: 40px !important;
   width: 40px !important;
   /* border: 2px solid whitesmoke; */
   border-radius: 50%;
+  transition: 0.3s ease;
 }
 
 .nav-icon:hover {
-  box-shadow: 0px 0px 20px #1a85ff;
-  transform: scale(1.1);
-  background-color: #002c5fa6;
+  /* box-shadow: 0px 0px 20px #1a85ff; */
+  transform: scale(1.5);
+  color: white;
 }
 
 .home-section {
