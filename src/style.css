@@ -391,25 +391,30 @@ button:focus {
     margin-left: 10px;
   }
 
+  .Typewriter{
+    display: none;
+  }
+
   .Typewriter__cursor {
     display: none !important;
   }
 
   .img-fluid {
     margin-left: 3.5vw !important;
-    margin-top: 4rem;
-    max-height: 320px !important;
+    margin-top: 2rem;
+    max-height: 330px !important;
   }
 
   .heading-name {
     margin-left: 10px;
-    font-size: 26px !important;
-    margin-top: -10px;
+    font-size: 30px !important;
+    /* margin-top: -10px; */
   }
 
   .heading {
+    margin-top: 20px;
     margin-left: 10px;
-    font-size: 26px !important;
+    font-size: 30px !important;
   }
 
   .home-section {
@@ -417,18 +422,48 @@ button:focus {
     /* margin-top: -20px; */
   }
 
+  .home-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .go-down-container{
+    display: none;
+  }
+
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .home-content {
     padding-top: 1rem !important;
   }
 
   .home-about-section {
-    margin-top: -18% !important;
+    margin-top: -30% !important;
     padding-top: 0 !important;
   }
 
   .home-about-description {
     margin-top: 0 !important;
     padding-top: 0 !important;
+  }
+
+  .home-about-description h1{
+    text-align: center !important;
+    font-size: 30px !important;
   }
 
   .myAvtar {
