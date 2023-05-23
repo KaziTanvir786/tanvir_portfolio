@@ -168,15 +168,15 @@ button:focus {
   width: 2.5em !important;
 }
 
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
-}
+} */
 
-.nav-link {
+/* .nav-link {
   padding: 0.8rem 1rem !important;
-}
+} */
 
 @media (max-width: 767px) {
   .nav-link {
@@ -184,19 +184,19 @@ button:focus {
   }
 }
 
-.navbar-nav .nav-item {
+/* .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
-}
+} */
 
-.navbar-nav .nav-item a {
+/* .navbar-nav .nav-item a {
   font-weight: 400;
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;
-}
+} */
 
-.navbar-nav .nav-item a::after {
+/* .navbar-nav .nav-item a::after {
   content: "";
   margin-top: 10px;
   position: relative;
@@ -209,11 +209,11 @@ button:focus {
   left: 1;
   z-index: -1;
   transition: 0.5s ease;
-}
+} */
 
-.navbar-nav .nav-item a:hover::after {
+/* .navbar-nav .nav-item a:hover::after {
   width: 100%;
-}
+} */
 
 /* --------- */
 /* Home section */
@@ -267,21 +267,23 @@ button:focus {
 }
 
 @keyframes glow-animation {
-  from{
+  from {
     box-shadow: 1px 1px 40px #3278fa;
   }
-  to{
+
+  to {
     box-shadow: 1px 1px 40px #3278fa49;
   }
 }
 
 @keyframes jump-animation {
   from {
-      transform: translateY(0);
+    transform: translateY(0);
   }
+
   to {
-        transform: translateY(-15px);
-    }
+    transform: translateY(-15px);
+  }
 }
 
 #tsparticles {
@@ -298,6 +300,29 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.nav-item {
+  padding-left: 20px;
+}
+
+.nav-icon {
+  color: whitesmoke;
+  font-size: 26px;
+  transition: 0.2s ease;
+  display: inline;
+  border: none;
+  padding: 7px;
+  height: 40px !important;
+  width: 40px !important;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 50%;
+}
+
+.nav-icon:hover {
+  box-shadow: 0px 0px 20px #1a85ff;
+  transform: scale(1.1);
+  background-color: #002c5fa6;
+}
+
 .home-section {
   position: relative;
   z-index: -1;
@@ -309,7 +334,8 @@ button:focus {
   /* height: 110vh; */
 }
 
-.go-down, .go-top {
+.go-down,
+.go-top {
   height: 50px;
   width: 50px;
   /* background-color: #1a85ff; */
@@ -325,13 +351,13 @@ button:focus {
   animation-play-state: running;
 }
 
-.go-top{
+.go-top {
   display: flex;
   flex-direction: column;
 }
 
 .go-down-container {
-  margin-top: 10vh;
+  margin-top: 3vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -391,7 +417,7 @@ button:focus {
     margin-left: 10px;
   }
 
-  .Typewriter{
+  .Typewriter {
     display: none;
   }
 
@@ -417,30 +443,42 @@ button:focus {
     font-size: 30px !important;
   }
 
-  .home-section {
-    height: 110vh !important;
+  .home-section,
+  .home-about-section {
+    /* height: 100vh !important; */
     /* margin-top: -20px; */
-  }
-
-  .home-header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .go-down-container{
-    display: none;
+  /* .home-about-section {
+    padding-top: 100px !important;
+  } */
+
+  .home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  .home-content{
+  .go-down-container {
+    position: absolute;
+    /* margin-top: -30%; */
+    z-index: 999999999999 !important;
+  }
+
+  .home-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .img-container{
+  .img-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -451,17 +489,17 @@ button:focus {
     padding-top: 1rem !important;
   }
 
-  .home-about-section {
+  /* .home-about-section {
     margin-top: -30% !important;
     padding-top: 0 !important;
-  }
+  } */
 
   .home-about-description {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
 
-  .home-about-description h1{
+  .home-about-description h1 {
     text-align: center !important;
     font-size: 30px !important;
   }
@@ -495,7 +533,7 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 50px !important;
 }
 
 .home-about-description {
@@ -614,7 +652,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
 }
@@ -716,7 +754,7 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
   color: white !important;

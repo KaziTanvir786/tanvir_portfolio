@@ -25,9 +25,9 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hello!
-                <span className="wave" role="img" aria-labelledby="wave">
+                {/* <span className="wave" role="img" aria-labelledby="wave">
                   <i class="fa-solid fa-hand-wave"></i>
-                </span>
+                </span> */}
               </h1>
 
               <h1 className="heading-name">
@@ -52,18 +52,18 @@ function Home() {
         </Container>
       </Container>
       <div className="go-down-container">
-            <div onClick={() => scrollToSection(section_home2)} style={{cursor: "pointer"}} className="go-down" id="go-down-home">
-            <i class="fa-solid fa-angle-down"></i>
-            </div>
+        <div onClick={() => scrollToSection(section_home2)} style={{ cursor: "pointer" }} className="go-down" id="go-down-home">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
       </div>
       <div ref={section_home2} className="home2">
         <Home2 />
         <div className="go-top-container">
-            <div onClick={() => scrollToSection(section_home1)} style={{cursor: "pointer"}} className="go-top" id="go-top-home">
+          <div onClick={() => scrollToSection(section_home1)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
             <i class="fa-solid fa-angle-up"></i>
-            <span style={{fontSize:"16px"}}><b>TOP</b></span>
-            </div>
-      </div>
+            <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+          </div>
+        </div>
       </div>
     </section>
   );
