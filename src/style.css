@@ -427,20 +427,20 @@ button:focus {
   }
 
   .img-fluid {
-    margin-left: 3.5vw !important;
+    /* margin-left: 3.5vw !important; */
     margin-top: 2rem;
     max-height: 330px !important;
   }
 
   .heading-name {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: 30px !important;
     /* margin-top: -10px; */
   }
 
   .heading {
     margin-top: 20px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: 30px !important;
   }
 
