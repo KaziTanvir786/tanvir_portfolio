@@ -466,12 +466,6 @@ button:focus {
     text-align: center;
   }
 
-  .go-down-container {
-    position: absolute;
-    /* margin-top: -30%; */
-    z-index: 999999999999 !important;
-  }
-
   .home-content {
     display: flex;
     flex-direction: column;
