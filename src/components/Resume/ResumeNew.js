@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 // import Particle from "../Particle";
@@ -18,13 +18,21 @@ function ResumeNew() {
     setWidth(window.innerWidth);
   }, []);
 
+  const top_section_resume = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop, behavior: "smooth"
+    })
+  }
+
   return (
     // <motion.div
     //   initial={{ width: 0 }}
     //   animate={{ width: "100%" }}
     //   exit={{ x: window.innerWidth, transition: { duration: 0.001 } }}
     // >
-    <Container fluid className="resume-section">
+    <Container ref={top_section_resume} fluid className="resume-section">
       {/* <Particle /> */}
       <Row data-aos="fade-down" style={{ justifyContent: "center", position: "relative" }}>
         <Button
@@ -60,6 +68,13 @@ function ResumeNew() {
             &nbsp;Download CV
           </Button>
         </Row> */}
+
+      <div className="go-top-container">
+        <div onClick={() => scrollToSection(top_section_resume)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
+          <i class="fa-solid fa-angle-up"></i>
+          <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+        </div>
+      </div>
 
     </Container>
     // </motion.div >

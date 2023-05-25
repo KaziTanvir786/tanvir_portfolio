@@ -1,4 +1,4 @@
-import React from "react";
+import ReactReact, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 // import Particle from "../Particle";
@@ -11,13 +11,20 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 // import { motion } from "framer-motion";
 
 function Projects() {
+  const top_section_projects = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop, behavior: "smooth"
+    })
+  }
   return (
     // <motion.div
     //   initial={{ width: 0 }}
     //   animate={{ width: "100%" }}
     //   exit={{ x: window.innerWidth, transition: { duration: 0.001 } }}
     // >
-    <Container fluid className="project-section">
+    <Container ref={top_section_projects} fluid className="project-section">
       {/* <Particle /> */}
       <Container>
         <div data-aos="fade-down">
@@ -97,6 +104,12 @@ function Projects() {
           </Col>
         </Row>
       </Container>
+      <div className="go-top-container">
+        <div onClick={() => scrollToSection(top_section_projects)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
+          <i class="fa-solid fa-angle-up"></i>
+          <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+        </div>
+      </div>
     </Container>
     // </motion.div >
   );

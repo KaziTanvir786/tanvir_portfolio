@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
 import Github from "./Github";
@@ -9,13 +9,20 @@ import Toolstack from "./Toolstack";
 // import { motion } from "framer-motion";
 
 function About() {
+  const top_section_about = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop, behavior: "smooth"
+    })
+  }
   return (
     // <motion.div
     //   initial={{ width: 0 }}
     //   animate={{ width: "100%" }}
     //   exit={{ x: window.innerWidth, transition: { duration: 0.001 } }}
     // >
-    <Container fluid className="about-section">
+    <Container ref={top_section_about} fluid className="about-section">
       {/* <Particle /> */}
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -54,6 +61,12 @@ function About() {
         <Toolstack />
         <Github />
       </Container>
+      <div className="go-top-container">
+        <div onClick={() => scrollToSection(top_section_about)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
+          <i class="fa-solid fa-angle-up"></i>
+          <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+        </div>
+      </div>
     </Container>
     // </motion.div>
   );
