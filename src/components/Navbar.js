@@ -7,12 +7,12 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlineTrophy,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
 import { TbSchool } from "react-icons/tb";
 import { BiBriefcase } from "react-icons/bi";
+import { IoRibbonOutline } from "react-icons/io5";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -81,17 +81,17 @@ function NavBar() {
             <Nav.Item className="nav-item">
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/certificates"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineTrophy className="nav-icon" />
+                <IoRibbonOutline className="nav-icon" />
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="nav-item">
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/education"
                 onClick={() => updateExpanded(false)}
               >
                 <TbSchool className="nav-icon" />
@@ -101,7 +101,7 @@ function NavBar() {
             <Nav.Item className="nav-item">
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/experiences"
                 onClick={() => updateExpanded(false)}
               >
                 <BiBriefcase className="nav-icon" />

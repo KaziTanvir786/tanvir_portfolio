@@ -12,6 +12,10 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 function App() {
   const [load, upadateLoad] = useState(true);
 

@@ -14,7 +14,7 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col data-aos="fade-right" md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em", textAlign: "left" }}>
               LET ME <span className="blue"> <b>INTRODUCE</b> </span> MYSELF
             </h1>
@@ -52,14 +52,14 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col data-aos="fade-left" md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col data-aos="fade-down" md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="blue"> <b>connect</b> </span>with me

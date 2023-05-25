@@ -773,7 +773,7 @@ button:focus {
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 1px 1px 10px rgba(5, 19, 148, 0.274) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -787,7 +787,8 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(29, 156, 240, 0.883) !important;
+  box-shadow: 1px 1px 20px rgba(4, 99, 223, 0.418) !important;
+  background-color: #003c8077;
 }
 
 .tech-icon-images {

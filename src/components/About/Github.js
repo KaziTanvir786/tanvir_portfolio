@@ -5,16 +5,18 @@ import { Row } from "react-bootstrap";
 function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
+      <h1 data-aos="fade-down" className="project-heading" style={{ paddingBottom: "20px" }}>
+        Days I <strong className="blue">Code</strong>
       </h1>
-      <GitHubCalendar
-        username="KaziTanvir786"
-        blockSize={15}
-        blockMargin={5}
-        color="#c084f5"
-        fontSize={16}
-      />
+      <div data-aos="fade-up">
+        <GitHubCalendar
+          username="KaziTanvir786"
+          blockSize={15}
+          blockMargin={5}
+          color="#c084f5"
+          fontSize={16}
+        />
+      </div>
     </Row>
   );
 }
