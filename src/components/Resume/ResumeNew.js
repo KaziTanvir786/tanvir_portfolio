@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/CV of Kazi Tanvir Akter.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { motion } from "framer-motion";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
@@ -18,9 +19,13 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.001 } }}
+    >
       <Container fluid className="resume-section">
-        <Particle />
+        {/* <Particle /> */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -57,7 +62,7 @@ function ResumeNew() {
         </Row> */}
 
       </Container>
-    </div>
+    </motion.div>
   );
 }
 

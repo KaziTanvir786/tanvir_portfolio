@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Particle from "./components/Particle";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -28,7 +29,8 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <AnimatedRoutes/>
+        <Particle />
+        <AnimatedRoutes />
         <Footer />
       </div>
     </Router>
