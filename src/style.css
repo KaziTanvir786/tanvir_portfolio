@@ -157,6 +157,10 @@ button:focus {
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
+
+  .overflow-hidden-res {
+    overflow-x: hidden;
+  }
 }
 
 .navbar-brand {
@@ -268,11 +272,11 @@ button:focus {
 
 @keyframes glow-animation {
   from {
-    box-shadow: 1px 1px 40px #3278fa;
+    box-shadow: 1px 1px 20px #236ffcd7;
   }
 
   to {
-    box-shadow: 1px 1px 40px #3278fa49;
+    box-shadow: 1px 1px 10px #3278fa49;
   }
 }
 

@@ -25,7 +25,7 @@ function About() {
     <Container ref={top_section_about} fluid className="about-section">
       {/* <Particle /> */}
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px", overflowX: "hidden" }}>
+        <Row className="overflow-hidden-res" style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
             style={{

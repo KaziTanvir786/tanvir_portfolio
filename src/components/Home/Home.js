@@ -27,7 +27,7 @@ function Home() {
       <Container ref={section_home1} fluid className="home-section" id="home">
         {/* <Particle /> */}
         <Container className="home-content">
-          <Row style={{ overflowX: "hidden" }}>
+          <Row className="overflow-hidden-res">
             <Col data-aos="fade-right" md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hello!

@@ -13,7 +13,7 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row style={{ overflowX: "hidden" }}>
+        <Row className="overflow-hidden-res">
           <Col data-aos="fade-right" md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em", textAlign: "left" }}>
               LET ME <span className="blue"> <b>INTRODUCE</b> </span> MYSELF
