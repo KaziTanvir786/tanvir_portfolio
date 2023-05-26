@@ -388,12 +388,12 @@ button:focus {
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 20px !important;
+  padding-left: 14px !important;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 20px !important;
+  padding-left: 14px !important;
 }
 
 .main-name {
@@ -406,6 +406,7 @@ button:focus {
   font-weight: 600 !important;
   /* font-family: 'Red Hat Mono', monospace; */
   font-weight: 400 !important;
+  margin-left: -6px;
 }
 
 .Typewriter__cursor {
