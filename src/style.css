@@ -272,11 +272,11 @@ button:focus {
 
 @keyframes glow-animation {
   from {
-    box-shadow: 1px 1px 20px #236ffcd7;
+    box-shadow: 1px 1px 20px #236ffc;
   }
 
   to {
-    box-shadow: 1px 1px 10px #3278fa49;
+    box-shadow: 1px 1px 20px #3278fa49;
   }
 }
 
