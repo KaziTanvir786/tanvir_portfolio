@@ -68,8 +68,9 @@ function Projects() {
               demoLink=""
             />
           </Col>
-
-          <Col data-aos="flip-right" md={4} className="project-card">
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col data-aos="flip-right" md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
