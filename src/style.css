@@ -1,23 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100;200;300;400&family=Red+Hat+Mono:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100;200;300;400&family=Red+Hat+Mono:wght@300;400;500&display=swap");
 
 .logo-text {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 36px;
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
 }
 
 html {
-  --section-background-color: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.582),
-      rgba(11, 17, 43, 0.904));
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(11, 17, 43, 0.904)
+  );
 
-  --image-gradient: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.678),
-      rgba(8, 20, 43, 0.863));
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(8, 20, 43, 0.863)
+  );
 
   --imp-text-color: #1a85ff;
 }
@@ -947,4 +951,20 @@ button:focus {
 .fork-btn {
   font-size: 1.1em !important;
   padding-top: 10px !important;
+}
+
+.certificate-card {
+  padding: 15px 10px;
+}
+
+.certificate-image {
+  box-shadow: 1px 1px 30px #0154b3b2;
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.certificate-image:hover {
+  box-shadow: 1px 1px 30px #0174f7;
+  transform: scale(1.03);
+  opacity: 1;
 }
