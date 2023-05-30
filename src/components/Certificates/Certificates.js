@@ -9,7 +9,7 @@ const Certificates = () => {
   return (
     <div>
       <h1
-        data-aos="flip-down"
+        data-aos="fade-down"
         style={{ margin: "120px 0px 80px 0px", color: "white" }}
       >
         Certificates I{" "}
