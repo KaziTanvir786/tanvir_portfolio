@@ -7,15 +7,15 @@ import Type from "./Type";
 // import { motion } from "framer-motion";
 
 function Home() {
-
   const section_home2 = useRef(null);
   const section_home1 = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop, behavior: "smooth"
-    })
-  }
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   return (
     // <motion.div
@@ -32,7 +32,7 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hello!
                 {/* <span className="wave" role="img" aria-labelledby="wave">
-                  <i class="fa-solid fa-hand-wave"></i>
+                  <i className="fa-solid fa-hand-wave"></i>
                 </span> */}
               </h1>
 
@@ -46,28 +46,52 @@ function Home() {
               </div>
             </Col>
 
-            <Col data-aos="fade-left" className="img-container" md={5} style={{ paddingBottom: 20 }}>
+            <Col
+              data-aos="fade-left"
+              className="img-container"
+              md={5}
+              style={{ paddingBottom: 20 }}
+            >
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "400px", borderRadius: "50%", marginLeft: "2%", animation: "glow-animation 2s ease-in-out 0s infinite alternate", animationPlayState: "running" }}
+                style={{
+                  maxHeight: "400px",
+                  borderRadius: "50%",
+                  marginLeft: "2%",
+                  animation:
+                    "glow-animation 2s ease-in-out 0s infinite alternate",
+                  animationPlayState: "running",
+                }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
       <div className="go-down-container">
-        <div onClick={() => scrollToSection(section_home2)} style={{ cursor: "pointer" }} className="go-down" id="go-down-home">
-          <i class="fa-solid fa-angle-down"></i>
+        <div
+          onClick={() => scrollToSection(section_home2)}
+          style={{ cursor: "pointer" }}
+          className="go-down"
+          id="go-down-home"
+        >
+          <i className="fa-solid fa-angle-down"></i>
         </div>
       </div>
       <div ref={section_home2} className="home2">
         <Home2 />
         <div className="go-top-container">
-          <div onClick={() => scrollToSection(section_home1)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
-            <i class="fa-solid fa-angle-up"></i>
-            <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+          <div
+            onClick={() => scrollToSection(section_home1)}
+            style={{ cursor: "pointer" }}
+            className="go-top"
+            id="go-top-home"
+          >
+            <i className="fa-solid fa-angle-up"></i>
+            <span style={{ fontSize: "16px" }}>
+              <b>TOP</b>
+            </span>
           </div>
         </div>
       </div>

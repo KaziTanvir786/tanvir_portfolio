@@ -1,4 +1,4 @@
-import ReactReact, { useRef } from "react";
+import { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 // import Particle from "../Particle";
@@ -15,9 +15,10 @@ function Projects() {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop, behavior: "smooth"
-    })
-  }
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     // <motion.div
     //   initial={{ width: 0 }}
@@ -70,7 +71,7 @@ function Projects() {
           </Col>
         </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col data-aos="flip-right" md={4} className="project-card">
+          <Col data-aos="flip-right" md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -88,7 +89,7 @@ function Projects() {
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
               ghLink=""
-            // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
@@ -100,15 +101,22 @@ function Projects() {
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink=""
-            // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
           </Col>
         </Row>
       </Container>
       <div className="go-top-container">
-        <div onClick={() => scrollToSection(top_section_projects)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
-          <i class="fa-solid fa-angle-up"></i>
-          <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+        <div
+          onClick={() => scrollToSection(top_section_projects)}
+          style={{ cursor: "pointer" }}
+          className="go-top"
+          id="go-top-home"
+        >
+          <i className="fa-solid fa-angle-up"></i>
+          <span style={{ fontSize: "16px" }}>
+            <b>TOP</b>
+          </span>
         </div>
       </div>
     </Container>

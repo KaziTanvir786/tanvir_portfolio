@@ -13,9 +13,10 @@ function About() {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop, behavior: "smooth"
-    })
-  }
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     // <motion.div
     //   initial={{ width: 0 }}
@@ -25,7 +26,10 @@ function About() {
     <Container ref={top_section_about} fluid className="about-section">
       {/* <Particle /> */}
       <Container>
-        <Row className="overflow-hidden-res" style={{ justifyContent: "center", padding: "10px" }}>
+        <Row
+          className="overflow-hidden-res"
+          style={{ justifyContent: "center", padding: "10px" }}
+        >
           <Col
             md={7}
             style={{
@@ -62,9 +66,16 @@ function About() {
         <Github />
       </Container>
       <div className="go-top-container">
-        <div onClick={() => scrollToSection(top_section_about)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
-          <i class="fa-solid fa-angle-up"></i>
-          <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+        <div
+          onClick={() => scrollToSection(top_section_about)}
+          style={{ cursor: "pointer" }}
+          className="go-top"
+          id="go-top-home"
+        >
+          <i className="fa-solid fa-angle-up"></i>
+          <span style={{ fontSize: "16px" }}>
+            <b>TOP</b>
+          </span>
         </div>
       </div>
     </Container>

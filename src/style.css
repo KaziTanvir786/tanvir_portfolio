@@ -968,3 +968,8 @@ button:focus {
   transform: scale(1.03);
   opacity: 1;
 }
+
+.edu-title {
+  position: sticky;
+  top: 140px;
+}

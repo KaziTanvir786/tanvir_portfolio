@@ -22,9 +22,10 @@ function ResumeNew() {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop, behavior: "smooth"
-    })
-  }
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   return (
     // <motion.div
@@ -34,7 +35,10 @@ function ResumeNew() {
     // >
     <Container ref={top_section_resume} fluid className="resume-section">
       {/* <Particle /> */}
-      <Row data-aos="fade-down" style={{ justifyContent: "center", position: "relative" }}>
+      <Row
+        data-aos="fade-down"
+        style={{ justifyContent: "center", position: "relative" }}
+      >
         <Button
           variant="primary"
           href={pdf}
@@ -70,12 +74,18 @@ function ResumeNew() {
         </Row> */}
 
       <div className="go-top-container">
-        <div onClick={() => scrollToSection(top_section_resume)} style={{ cursor: "pointer" }} className="go-top" id="go-top-home">
-          <i class="fa-solid fa-angle-up"></i>
-          <span style={{ fontSize: "16px" }}><b>TOP</b></span>
+        <div
+          onClick={() => scrollToSection(top_section_resume)}
+          style={{ cursor: "pointer" }}
+          className="go-top"
+          id="go-top-home"
+        >
+          <i className="fa-solid fa-angle-up"></i>
+          <span style={{ fontSize: "16px" }}>
+            <b>TOP</b>
+          </span>
         </div>
       </div>
-
     </Container>
     // </motion.div >
   );
