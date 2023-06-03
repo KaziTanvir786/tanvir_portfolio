@@ -973,3 +973,60 @@ button:focus {
   position: sticky;
   top: 140px;
 }
+
+.edu-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.edu-bar {
+  border-right: 2px solid whitesmoke;
+  height: 90vh;
+  width: 20%;
+}
+
+.edu-items {
+  width: 70%;
+}
+
+.edu-item {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 50px 0px 50px 100px;
+}
+
+.edu-bar-circle-1,
+.edu-bar-circle-2,
+.edu-bar-circle-3 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  margin-left: 18.3%;
+}
+
+.edu-bar-circle-1 {
+  margin-top: 43px;
+}
+
+.edu-bar-circle-2 {
+  margin-top: 275px;
+}
+
+.edu-bar-circle-3 {
+  margin-top: 500px;
+}
+
+.edu-logo {
+  display: flex;
+  align-items: center;
+}
+
+.edu-logo-img {
+  margin-left: 0px;
+  height: 120px;
+  width: 105px;
+}
